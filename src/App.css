@@ -131,10 +131,16 @@ hr {
 .header-content {
   display: flex;
   align-items: center;
+  flex-direction: column;
   padding: 20px;
   border-radius: 10px;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
   z-index: 1;
+  letter-spacing: 0.1em;
+  text-indent: 0.3em;
+  /* text-transform: uppercase; */
+  font-weight: 800;
+  line-height: 1.6em;
 }
 
 .header-content .header-title {
@@ -146,7 +152,7 @@ hr {
   text-align: center;
   letter-spacing: 0.1em;
   text-indent: 0.3em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 800;
   line-height: 1.6em;
 }
@@ -314,7 +320,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: rgba(234, 85, 23, 0.8);
+  background-color: #ea8717;
   color: #fff;
 }
 

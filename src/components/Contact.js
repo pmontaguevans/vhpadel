@@ -11,9 +11,6 @@ const Contact = () => {
   return (
     <>
       <h1 className="underline-gap">Kontakta oss</h1>
-      <h3>
-        Vi ser fram emot att höra ifrån dig och framförallt träffa dig i hallen!
-      </h3>
       <div className="contact-section">
         <div className="contact-item">
           <FontAwesomeIcon icon={faPhoneAlt} className="contact-icon" />
@@ -25,7 +22,7 @@ const Contact = () => {
         </div>
         <div className="contact-item">
           <FontAwesomeIcon icon={faMapMarkerAlt} className="contact-icon" />
-            <p>Västra Hamnen, Malmö</p>
+          <p>Västra Hamnen, Malmö</p>
         </div>
       </div>
     </>

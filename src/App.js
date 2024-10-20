@@ -67,6 +67,7 @@ function App() {
           <h1>
             Välkommen till <span>VH Padel</span>
           </h1>
+          <h2>En av Malmöområdets bästa padelhallar!</h2>
         </div>
         <div className="scroll-down" onClick={scrollToContent}>
           <FontAwesomeIcon icon={faArrowCircleDown} />
@@ -77,7 +78,7 @@ function App() {
         <h2>
           <span>VH Padel</span> har precis tagit över den väldigt fina
           padelhallen i västra hamnen och vi är glada att kunna välkomna nya och
-          gamla spelare, företag och tävlande till oss...
+          gamla spelare, företag och tävlande till oss.
         </h2>
       </section>
 
@@ -86,8 +87,8 @@ function App() {
         <TextSection
           content={
             <Box
-              title="Boka"
-              content="Det går nu att boka våra banor på MATCHi. Under en period..."
+              title="BOKA"
+              content="Det går nu att boka våra banor på MATCHi. Under en period gick det att boka vidare hos PDL som drev hallen tidigare, men nu bokas allt via VH Padel"
               imageUrl={padel2}
               reverse={false}
             />
@@ -97,8 +98,8 @@ function App() {
         <TextSection
           content={
             <Box
-              title="I hallen"
-              content="Det går också bra att kontakta oss i hallen under de tider..."
+              title="I HALLEN"
+              content="Det går också bra att kontakt oss i hallen under de tider som det finns personal. Vanligast på eftermiddagar och kvällar när många spelar."
               imageUrl={padel2}
               reverse={true}
             />
@@ -109,16 +110,16 @@ function App() {
           content={
             <Box
               title="MATCHi"
-              content="Behöver du hjälp med bokning, hitta tränare, vill kontakta..."
+              content="Behöver du hjälp med bokning, hitta tränare, vill kontakta oss angående event, seriespel eller har kul förslag och idéer för en bättre padelupplevelse"
               imageUrl={padel2}
               reverse={false}
             />
           }
           index={2}
         />
-        <hr />
       </div>
 
+      <hr />
       <div className="contact-map-container">
         <div className="contact-section">
           <Contact />
@@ -129,7 +130,6 @@ function App() {
           </APIProvider>
         </div>
       </div>
-
       <footer>
         <p>Copyright © All Rights Reserved</p>
         <a

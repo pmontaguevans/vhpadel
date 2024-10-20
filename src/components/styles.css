@@ -38,6 +38,7 @@
   font-size: 24px;
   margin: 10px;
   color: #ea8717; /* Same color as the text */
+  text-transform: uppercase;
 }
 
 /* --- Responsive Adjustments --- */
@@ -114,7 +115,6 @@
   text-align: center;
   letter-spacing: 0.1em;
   text-indent: 0.3em;
-  text-transform: uppercase;
   font-weight: 800;
   line-height: 1.6em;
 }
@@ -135,8 +135,8 @@
   color: #10121ab3;
   text-align: center;
   letter-spacing: 0.1em;
-  text-indent: 0.3em;
-  text-transform: uppercase;
+  text-indent: 0.2em;
+  /* text-transform: uppercase; */
   font-weight: 500;
   line-height: 1.6em;
 }
