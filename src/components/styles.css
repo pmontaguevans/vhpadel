@@ -1,0 +1,179 @@
+/* Base responsive container styling */
+.responsive-container {
+  width: 100%;
+  color: #fff;
+  background-color: #071321; /* Adjust the background as needed */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Styling for the container holding stats */
+.container-stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10rem; /* Adds padding on larger screens */
+  min-height: 200px;
+  color: #ea8717; /* Text color */
+}
+
+/* Individual stat item */
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-width: 33.3%;
+  margin: 0;
+}
+
+/* Number styling in stat items */
+.stat-number {
+  margin: 10px;
+  font-size: 3rem; /* Adjust size for large number display */
+  color: #ea8717; /* Same color as the text */
+}
+
+/* Label styling in stat items */
+.stat-label {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 10px;
+  color: #ea8717; /* Same color as the text */
+}
+
+/* --- Responsive Adjustments --- */
+
+/* Adjust for tablets (width below 768px) */
+@media (max-width: 768px) {
+  .container-stats {
+    flex-direction: column;
+    padding: 0 2rem; /* Reduce padding for smaller screens */
+  }
+
+  .stat-item {
+    min-width: 100%; /* Make each stat take full width on mobile */
+    margin-bottom: 20px; /* Add spacing between items */
+  }
+
+  .stat-number {
+    font-size: 2.5rem; /* Adjust size for mobile */
+  }
+
+  .stat-label {
+    font-size: 20px; /* Adjust size for mobile */
+  }
+}
+
+/* Adjust for small devices (width below 480px) */
+@media (max-width: 480px) {
+  .container-stats {
+    padding: 0 1rem; /* Even smaller padding */
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-label {
+    font-size: 18px;
+  }
+}
+
+/* Box container with flexbox */
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Text section styling */
+.box-text {
+  flex: 1; /* Take up available space */
+  padding-right: 20px;
+  text-align: left;
+}
+
+.box-container.reverse {
+  flex-direction: row-reverse; /* Reverse the layout for alternating boxes */
+}
+
+.box-container.reverse .box-text {
+  padding-right: 0;
+  padding-left: 20px; /* Adjust padding for reverse layout */
+}
+
+.box-text h2 {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #10121ab3;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-indent: 0.3em;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 1.6em;
+}
+
+.box-text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Gap between text and underline */
+  height: 4px; /* Thickness of the underline */
+  width: 100%; /* Full width of the text */
+  background-color: #ea8717; /* Underline color */
+}
+
+.box-text p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #10121ab3;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-indent: 0.3em;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.6em;
+}
+
+/* Image section styling */
+.box-image {
+  flex-shrink: 0; /* Prevent shrinking the image */
+}
+
+.box-image img {
+  max-width: 400px; /* Limit the size of the image */
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* --- RESPONSIVE STYLES --- */
+/* Stack text and image vertically on mobile devices */
+@media (max-width: 768px) {
+  .box-container {
+    flex-direction: column;
+    text-align: center; /* Center text for mobile */
+  }
+
+  /* Remove the reverse layout for mobile as everything stacks vertically */
+  .box-container.reverse {
+    flex-direction: column;
+  }
+
+  /* Adjust padding for mobile to stack */
+  .box-text {
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 20px; /* Add spacing between text and image */
+  }
+
+  .box-image img {
+    max-width: 100%; /* Full width of the image in mobile view */
+  }
+}

@@ -1,0 +1,66 @@
+.contact-section {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: space-evenly;
+  padding: 20px;
+  background-color: #fff; /* Light background for contrast */
+  margin: 0; /* Remove margin */
+  flex: 1; /* Take up equal space */
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Full width */
+}
+
+.contact-item p {
+  margin-top: 0;
+}
+
+.contact-item p,
+h3 {
+  margin-bottom: 0px;
+  color: #10121ab3;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-indent: 0.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.6em;
+}
+
+.contact-icon {
+  margin-right: 10px; /* Space between icon and text */
+  color: #ea8717; /* Icon color */
+  font-size: 24px; /* Size of the icon */
+}
+
+h3 {
+  margin: 0; /* Remove default margin for headers */
+}
+
+.underline-gap {
+  position: relative;
+  display: inline-block;
+  font-size: 2rem; /* Example font size */
+  color: #10121ab3;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-indent: 0.3em;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 1.6em;
+}
+.underline-gap::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Gap between text and underline */
+  height: 4px; /* Thickness of the underline */
+  width: 100%; /* Full width of the text */
+  background-color: #ea8717; /* Underline color */
+}
