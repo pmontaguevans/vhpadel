@@ -14,11 +14,20 @@ const Contact = () => {
       <div className="contact-section">
         <div className="contact-item">
           <FontAwesomeIcon icon={faPhoneAlt} className="contact-icon" />
-          <p>+46 123 456 789</p>
+          <a href="tel:+46760072920" className="callable-phone">
+            <p>+46 0760-072920</p>
+          </a>
         </div>
         <div className="contact-item">
           <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
-          <p>info@vhpadel.com</p>
+          <a
+            href="mailto:info@vhpadel.se"
+            className="callable-email"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <p>info@vhpadel.se</p>
+          </a>
         </div>
         <div className="contact-item">
           <FontAwesomeIcon icon={faMapMarkerAlt} className="contact-icon" />

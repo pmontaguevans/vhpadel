@@ -109,7 +109,7 @@
 }
 
 .box-text h2 {
-  font-size: 1.1em;
+  font-size: 2em;
   margin-bottom: 20px;
   color: #10121ab3;
   text-align: center;
@@ -139,6 +139,17 @@
   /* text-transform: uppercase; */
   font-weight: 500;
   line-height: 1.6em;
+}
+
+.callable-phone,
+.callable-email {
+  color: #ea8717; /* Change to your desired color */
+  text-decoration: none; /* Remove underline */
+}
+
+.callable-phone:hover,
+.callable-email:hover {
+  text-decoration: underline; /* Underline on hover */
 }
 
 /* Image section styling */

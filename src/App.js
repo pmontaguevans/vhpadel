@@ -87,7 +87,7 @@ function App() {
         <TextSection
           content={
             <Box
-              title="BOKA"
+              title="MATCHi"
               content="Det går nu att boka våra banor på MATCHi. Under en period gick det att boka vidare hos PDL som drev hallen tidigare, men nu bokas allt via VH Padel"
               imageUrl={padel2}
               reverse={false}
@@ -109,7 +109,7 @@ function App() {
         <TextSection
           content={
             <Box
-              title="MATCHi"
+              title="Kontakta oss"
               content="Behöver du hjälp med bokning, hitta tränare, vill kontakta oss angående event, seriespel eller har kul förslag och idéer för en bättre padelupplevelse"
               imageUrl={padel2}
               reverse={false}
