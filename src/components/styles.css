@@ -123,10 +123,10 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: -5px; /* Gap between text and underline */
-  height: 4px; /* Thickness of the underline */
-  width: 100%; /* Full width of the text */
-  background-color: #ea8717; /* Underline color */
+  bottom: -5px;
+  height: 4px;
+  width: 100%;
+  background-color: #ea8717;
 }
 
 .box-text p {

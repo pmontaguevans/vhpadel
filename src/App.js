@@ -10,8 +10,15 @@ import "./App.css";
 import { APIProvider } from "@vis.gl/react-google-maps";
 import GoogleMaps from "./components/GoogleMaps";
 import Contact from "./components/Contact";
-// import logo from "./vh-padel-high-res.png";
 import videoBackground from "./vhpadel.mp4"; // Import the video
+import Gallery from "./components/Gallery";
+import g1 from "./g1.jpeg";
+import g2 from "./g2.jpeg";
+import g3 from "./g3.jpeg";
+import g4 from "./g4.jpeg";
+import g5 from "./g5.jpeg";
+import g6 from "./g6.jpeg";
+import g7 from "./g7.jpeg";
 
 const TextSection = ({ title, content, index }) => {
   const [isVisible, ref] = useIntersectionObserver();
@@ -31,6 +38,8 @@ const TextSection = ({ title, content, index }) => {
 };
 
 function App() {
+  const images = [g6, g2, g3, g5, g4, g1, g7];
+
   const targetRef = useRef(null);
 
   const scrollToContent = () => {
@@ -109,8 +118,8 @@ function App() {
         <TextSection
           content={
             <Box
-              title="Kontakta oss"
-              content="Behöver du hjälp med bokning, hitta tränare, vill kontakta oss angående event, seriespel eller har kul förslag och idéer för en bättre padelupplevelse"
+              title="KONTAKT"
+              content="Behöver du hjälp med bokning, hitta tränare, vill kontakta oss angående event, seriespel eller har kul förslag och idéer för en bättre padelupplevelse så hör mer än gärna av er!"
               imageUrl={padel2}
               reverse={false}
             />
@@ -119,6 +128,24 @@ function App() {
         />
       </div>
 
+      <hr />
+
+      <div className="business-section">
+        <h2 className="underline-gap text-center">Företagsevent</h2>
+        <p>
+          Planera ett företagsevent i en inspirerande och aktiv miljö där padel
+          blir en del av er teamupplevelse! Oavsett om ni vill stärka
+          teamkänslan, nätverka med andra företag eller bara ha en rolig dag
+          tillsammans, erbjuder vi skräddarsydda lösningar för varje tillfälle.
+          Kombinera spännande padelmatcher med professionellt planerade
+          konferensmöjligheter och avkopplande afterwork-stunder. Våra lokaler
+          och dedikerade personal ser till att ni får ett lyckat event från
+          start till mål, där allt från sportaktiviteter till mat och dryck
+          ingår. Kontakta oss för att designa ert nästa event!
+        </p>
+      </div>
+
+      <Gallery images={images} />
       <hr />
       <div className="contact-map-container">
         <div className="contact-section">
@@ -137,7 +164,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Instagram
+          VH Padel på Instagram
           <FontAwesomeIcon icon={fabInstagram} />
         </a>
       </footer>

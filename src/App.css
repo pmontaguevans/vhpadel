@@ -138,7 +138,6 @@ hr {
   z-index: 1;
   letter-spacing: 0.1em;
   text-indent: 0.3em;
-  /* text-transform: uppercase; */
   font-weight: 800;
   line-height: 1.6em;
 }
@@ -152,7 +151,6 @@ hr {
   text-align: center;
   letter-spacing: 0.1em;
   text-indent: 0.3em;
-  /* text-transform: uppercase; */
   font-weight: 800;
   line-height: 1.6em;
 }
@@ -189,6 +187,7 @@ hr {
   margin: 0 auto;
   height: 100%;
   text-align: center;
+  border: none;
 }
 
 .content-section p {
@@ -347,4 +346,28 @@ footer svg {
 footer svg:hover,
 footer a:hover {
   color: #000;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.business-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 200px;
+}
+
+.business-section p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #10121ab3;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-indent: 0.2em;
+  font-weight: 500;
+  line-height: 1.6em;
 }
