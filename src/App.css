@@ -55,6 +55,13 @@
   z-index: -1;
 }
 
+@media (max-width: 768px) {
+  .video-background {
+    width: auto;
+    height: 100vh;
+  }
+}
+
 .contact-map-container {
   display: flex;
   justify-content: space-between;
