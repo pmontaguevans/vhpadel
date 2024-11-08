@@ -66,7 +66,13 @@ function App() {
       </header> */}
 
       <section className="full-screen-header">
-        <video autoPlay muted loop className="video-background">
+        <video
+          autoPlay
+          muted
+          loop
+          preload="metadata"
+          className="video-background"
+        >
           <source src={videoBackground} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -135,7 +141,8 @@ function App() {
         <p>
           <em>
             Vi har allt ni behöver för att kicka igång ert företagsevent!
-            Alltifrån konferensrum, lånerack, bollar till ett skåp med dryck & snacks.
+            Alltifrån konferensrum, lånerack, bollar till ett skåp med dryck &
+            snacks.
           </em>
           <br />
           <br />
