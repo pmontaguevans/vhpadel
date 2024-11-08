@@ -97,7 +97,7 @@ function App() {
           content={
             <Box
               title="MATCHi"
-              content="Det går nu att boka våra banor på MATCHi. Under en period gick det att boka vidare hos PDL som drev hallen tidigare, men nu bokas allt via VH Padel"
+              content="Det går nu att boka våra banor på MATCHi. Under en period gick det att boka vidare hos PDL som drev hallen tidigare, men nu bokas allt via VH Padel. Bra att tänka på vid bokning är att minst en av spelarna måste ha MATCHi"
               imageUrl={padel2}
               reverse={false}
             />
@@ -118,7 +118,7 @@ function App() {
         <TextSection
           content={
             <Box
-              title="KONTAKT"
+              title="KONTAKTA"
               content="Behöver du hjälp med bokning, hitta tränare, vill kontakta oss angående event, seriespel eller har kul förslag och idéer för en bättre padelupplevelse så hör mer än gärna av er!"
               imageUrl={padel2}
               reverse={false}
@@ -133,6 +133,12 @@ function App() {
       <div className="business-section">
         <h2 className="underline-gap text-center">Företagsevent</h2>
         <p>
+          <em>
+            Vi har allt ni behöver för att kicka igång ert företagsevent!
+            Alltifrån konferensrum, lånerack, bollar till ett skåp med dryck & snacks.
+          </em>
+          <br />
+          <br />
           Planera ett företagsevent i en inspirerande och aktiv miljö där padel
           blir en del av er teamupplevelse! Oavsett om ni vill stärka
           teamkänslan, nätverka med andra företag eller bara ha en rolig dag
@@ -141,7 +147,8 @@ function App() {
           konferensmöjligheter och avkopplande afterwork-stunder. Våra lokaler
           och dedikerade personal ser till att ni får ett lyckat event från
           start till mål, där allt från sportaktiviteter till mat och dryck
-          ingår. Kontakta oss för att designa ert nästa event!
+          ingår. <br />
+          Kontakta oss för att designa ert nästa event!
         </p>
       </div>
 
@@ -160,7 +167,7 @@ function App() {
       <footer>
         <p>Copyright © All Rights Reserved</p>
         <a
-          href="https://www.instagram.com/vhpadel/"
+          href="https://www.instagram.com/vh_padel/"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -378,6 +378,11 @@ footer a:hover {
   line-height: 1.6em;
 }
 
+.business-section p em {
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+}
+
 @media (min-width: 768px) {
   .business-section {
     padding: 50px 100px;
