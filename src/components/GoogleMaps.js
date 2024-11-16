@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Map, Marker } from "@vis.gl/react-google-maps";
+import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
 
 const GoogleMaps = () => {
   const [markerLocation, setMarkerLocation] = useState({
@@ -9,15 +9,25 @@ const GoogleMaps = () => {
 
   return (
     <div className="map-container">
-      <Map
-        style={{ borderRadius: "20px" }}
-        defaultZoom={13}
-        defaultCenter={markerLocation}
-        gestureHandling={"greedy"}
-        disableDefaultUI
+      <APIProvider
+        apiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}
+        onLoad={() => console.log("Maps API has loaded.")}
       >
-        <Marker position={markerLocation} />
-      </Map>
+        <Map
+          defaultZoom={16}
+          defaultCenter={markerLocation}
+          onCameraChanged={(ev) =>
+            console.log(
+              "camera changed:",
+              ev.detail.center,
+              "zoom:",
+              ev.detail.zoom
+            )
+          }
+        >
+          <Marker position={markerLocation} />
+        </Map>
+      </APIProvider>
     </div>
   );
 };
