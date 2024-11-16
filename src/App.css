@@ -135,6 +135,17 @@ hr {
   overflow: hidden;
 }
 
+.vimeo-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Send it behind content */
+  object-fit: cover;
+  pointer-events: none; /* Ensure no interaction with the video */
+}
+
 .header-content {
   display: flex;
   align-items: center;
@@ -379,7 +390,7 @@ footer a:hover {
 }
 
 .business-section p em {
-  font-size: 1rem;
+  font-size: 1.5rem;
   letter-spacing: 0.2em;
 }
 

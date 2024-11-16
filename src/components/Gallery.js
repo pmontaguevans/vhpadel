@@ -1,12 +1,20 @@
 import React from "react";
-import "./gallery.css"; // valfri CSS-fil för layout
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+import "./gallery.css";
 
 const Gallery = ({ images }) => {
   return (
     <div className="gallery">
       {images.map((image, index) => (
         <div key={index} className="gallery-item">
-          <img src={image} alt={`Gallery image ${index + 1}`} />
+          <LazyLoadImage
+            src={image}
+            alt={`Gallery image ${index + 1}`}
+            effect="blur"
+            width="100%"
+            height="100%"
+          />
         </div>
       ))}
     </div>

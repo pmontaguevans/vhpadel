@@ -12,17 +12,16 @@ import GoogleMaps from "./components/GoogleMaps";
 import Contact from "./components/Contact";
 import videoBackground from "./vhpadel.mp4"; // Import the video
 import Gallery from "./components/Gallery";
-import g1 from "./g1.jpeg";
-import g2 from "./g2.jpeg";
-import g3 from "./g3.jpeg";
-import g4 from "./g4.jpeg";
-import g5 from "./g5.jpeg";
-import g6 from "./g6.jpeg";
-import g7 from "./g7.jpeg";
+import g1 from "./1.jpeg";
+import g2 from "./2.jpeg";
+import g3 from "./3.jpeg";
+import g4 from "./4.jpeg";
+import g5 from "./5.jpeg";
+import g6 from "./6.jpeg";
+import g7 from "./7.jpeg";
 
 const TextSection = ({ title, content, index }) => {
   const [isVisible, ref] = useIntersectionObserver();
-
   const slideDirection = index % 2 === 0 ? "slide-in-left" : "slide-in-right";
 
   return (
@@ -50,21 +49,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* <header className="sticky-header">
-        <div className="header-content">
-          <img src={logo} alt="VH Padel Logo" className="header-logo" />
-          <a
-            href="https://www.instagram.com/vhpadel/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="header-instagram"
-          >
-            <FontAwesomeIcon icon={fabInstagram} />
-          </a>
-          <div className="header-title">VH Padel</div>
-        </div>
-      </header> */}
-
       <section className="full-screen-header">
         <video
           autoPlay
@@ -76,13 +60,12 @@ function App() {
           <source src={videoBackground} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-
         <div className="overlay"></div>
         <div className="header-content">
           <h1>
             Välkommen till <span>VH Padel</span>
           </h1>
-          <h2>En av Malmöområdets bästa padelhallar!</h2>
+          <h2>En av Malmös bästa padelhallar!</h2>
         </div>
         <div className="scroll-down" onClick={scrollToContent}>
           <FontAwesomeIcon icon={faArrowCircleDown} />
@@ -172,7 +155,18 @@ function App() {
         </div>
       </div>
       <footer>
-        <p>Copyright © All Rights Reserved</p>
+        <p>
+          <p>
+            © 2024 Skapad av{" "}
+            <a
+              href="https://creativeatmosphere.se/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Creative Atmosphere AB
+            </a>
+          </p>
+        </p>
         <a
           href="https://www.instagram.com/vh_padel/"
           target="_blank"
