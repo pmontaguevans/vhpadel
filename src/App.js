@@ -137,7 +137,7 @@ function App() {
           konferensmöjligheter och avkopplande afterwork-stunder. Våra lokaler
           och dedikerade personal ser till att ni får ett lyckat event från
           start till mål, där allt från sportaktiviteter till mat och dryck
-          ingår. <br />
+          ingår. <br /> <br />
           Kontakta oss för att designa ert nästa event!
         </p>
       </div>
