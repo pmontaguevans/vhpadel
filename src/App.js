@@ -86,8 +86,9 @@ function App() {
           content={
             <Box
               title="MATCHi"
-              content="Det går nu att boka våra banor på MATCHi. Under en period gick det att boka vidare hos PDL som drev hallen tidigare, men nu bokas allt via VH Padel. Bra att tänka på vid bokning är att minst en av spelarna måste ha MATCHi"
+              content="Bokning av banor sker enklast via MATCHi. Det går bra att hyra rack och köpa bollar, dryck och snacks i vår automat vid de tider receptionen inte är öppen."
               imageUrl={padel2}
+              link={true}
               reverse={false}
             />
           }
@@ -99,6 +100,7 @@ function App() {
               title="I HALLEN"
               content="Det går också bra att kontakt oss i hallen under de tider som det finns personal. Vanligast på eftermiddagar och kvällar när många spelar."
               imageUrl={padel2}
+              link={false}
               reverse={true}
             />
           }
@@ -110,6 +112,7 @@ function App() {
               title="KONTAKTA"
               content="Behöver du hjälp med bokning, hitta tränare, vill kontakta oss angående event, seriespel eller har kul förslag och idéer för en bättre padelupplevelse så hör mer än gärna av er!"
               imageUrl={padel2}
+              link={false}
               reverse={false}
             />
           }
@@ -156,7 +159,6 @@ function App() {
       </div>
       <footer>
         <p>
-          <p>
             © 2024 Skapad av{" "}
             <a
               href="https://creativeatmosphere.se/"
@@ -165,7 +167,6 @@ function App() {
             >
               Creative Atmosphere AB
             </a>
-          </p>
         </p>
         <a
           href="https://www.instagram.com/vh_padel/"
